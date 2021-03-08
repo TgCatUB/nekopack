@@ -1,1 +1,1 @@
-userbot: bash run.sh
+userbot: python3 -m userbot
