@@ -2,6 +2,7 @@ import asyncio
 import difflib
 import shlex
 from typing import Tuple
+import sys
 
 # if any requirements are cahnged then install that requirement
 async def lines_differnce(file1, file2):
@@ -36,8 +37,8 @@ async def runcmd(cmd: str) -> Tuple[str, str, int, int]:
     )
 
 
-async def update_requirements():
-    a, r = await lines_differnce("requirements.txt", "cat_ub/requirements.txt")
+async def update_requirements(main , test):
+    a, r = await lines_differnce(main, test)
     try:
         for i in a:
             await runcmd(f"pip install {i}")
@@ -47,5 +48,5 @@ async def update_requirements():
 
 
 loop = asyncio.get_event_loop()
-loop.run_until_complete(update_requirements())
+loop.run_until_complete(update_requirements(sys.argv[1] , sys.argv[2]))
 loop.close()
