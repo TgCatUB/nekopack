@@ -1,1 +1,1 @@
-userbot: bash run.sh
+worker: bash start
