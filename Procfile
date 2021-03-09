@@ -1,1 +1,1 @@
-worker: bash heroku
+worker: bash start
