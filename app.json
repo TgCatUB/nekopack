@@ -37,12 +37,12 @@
     },
     "COMMAND_HAND_LER": {
       "description": "Set this one with only one the symbol to use it before your command to run like . , ' `",
-      "value": "."
+      "value": ".",
       "required": false
     },
     "ENV": {
       "description": "Setting this to ANYTHING will enable heroku.",
-      "value": "ANYTHING"
+      "value": "ANYTHING",
       "required": false
     },
     "HEROKU_API_KEY": {
@@ -62,7 +62,7 @@
     },
     "UPSTREAM_REPO": {
       "description": "Use either goodcat or badcat .if you need custom deploy then type your git repo link",
-      "value": "goodcat"
+      "value": "goodcat",
       "required": false
     }
   },
