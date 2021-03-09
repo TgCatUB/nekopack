@@ -11,10 +11,6 @@
   "website": "#TODO",
   "success_url": "#TODO",
   "env": {
-    "ENV": {
-      "description": "Setting this to ANYTHING will enable heroku.",
-      "value": "ANYTHING"
-    },
     "ALIVE_NAME": {
       "description": "give your name",
       "value": ""
@@ -39,13 +35,15 @@
       "description": "Needed for inline buttons maker. Make a bot at http://telegram.dog/BotFather and get the token of your bot.Worth it. Get it.",
       "value": ""
     },
-    "UPSTREAM_REPO": {
-      "description": "Use either goodcat or badcat .if you need custom deploy then type your git repo link",
-      "value": "goodcat"
-    },
     "COMMAND_HAND_LER": {
       "description": "Set this one with only one the symbol to use it before your command to run like . , ' `",
       "value": "."
+      "required": false
+    },
+    "ENV": {
+      "description": "Setting this to ANYTHING will enable heroku.",
+      "value": "ANYTHING"
+      "required": false
     },
     "HEROKU_API_KEY": {
       "description": "Required for updating the bot and other stuff get it from https://dashboard.heroku.com/account",
@@ -60,6 +58,11 @@
     "TZ": {
       "description": "Required for Correct Time on autopic/get time. Know your timezone from http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
       "value": "Asia/Kolkata",
+      "required": false
+    },
+    "UPSTREAM_REPO": {
+      "description": "Use either goodcat or badcat .if you need custom deploy then type your git repo link",
+      "value": "goodcat"
       "required": false
     }
   },
