@@ -37,7 +37,6 @@ _set_bot () {
     rm -rf "$zippath"
     sleep 5
     cd $CATPATH
-    git init
     echo "    Starting CatUserBot    "
     echo "
                         :'######:::::'###::::'########::::
