@@ -60,10 +60,10 @@ repo.heads[ACTIVE_BRANCH_NAME].checkout(True) ')
 }
 
 _run_cat_git() {
+    local repolink=_get_repolink 
     $(_run_python_code 'from git import Repo
 import sys
-
-OFFICIAL_UPSTREAM_REPO = $(_get_repolink)
+OFFICIAL_UPSTREAM_REPO="'$repolink'"
 ACTIVE_BRANCH_NAME = "'$UPSTREAM_REPO_BRANCH'" or "master"
 
 repo = Repo.init()
