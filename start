@@ -42,7 +42,7 @@ _get_repolink () {
 
 
 _run_python_code() {
-    python${pVer%.*} -c "$1"
+    python3${pVer%.*} -c "$1"
 }
 
 _run_catpack_git() {
