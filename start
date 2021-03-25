@@ -25,19 +25,21 @@ _get_ziplink () {
 
 _get_repolink () {
     local regex
+    local rlink
     regex='(https?)://github.com/.+/.+'
     if [[ $UPSTREAM_REPO == "goodcat" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL3NhbmR5MTcwOS9jYXR1c2VyYm90" | base64 -d
+        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL3NhbmR5MTcwOS9jYXR1c2VyYm90" | base64 -d`
     elif [[ $UPSTREAM_REPO == "badcat" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL0ppc2FuMDkvY2F0dXNlcmJvdA==" | base64 -d
+        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL0ppc2FuMDkvY2F0dXNlcmJvdA==" | base64 -d`
     elif [[ $UPSTREAM_REPO =~ $regex ]]
     then
-        echo "${UPSTREAM_REPO}"
+        rlink=`echo "${UPSTREAM_REPO}"`
     else
-        echo "aHR0cHM6Ly9naXRodWIuY29tL3NhbmR5MTcwOS9jYXR1c2VyYm90" | base64 -d
+        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL3NhbmR5MTcwOS9jYXR1c2VyYm90" | base64 -d`
     fi
+    echo "$rlink"
 }
 
 
