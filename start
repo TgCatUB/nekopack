@@ -41,6 +41,38 @@ _get_repolink () {
 }
 
 
+_run_python_code() {
+    python${pVer%.*} -c "$1"
+}
+
+_run_catpack_git() {
+    $(runPythonCode 'from git import Repo
+import sys
+
+OFFICIAL_UPSTREAM_REPO = "https://github.com/sandy1709/catpack"
+ACTIVE_BRANCH_NAME = "master"
+
+repo = Repo.init()
+origin = repo.create_remote("temponame", OFFICIAL_UPSTREAM_REPO)
+origin.fetch()
+repo.create_head(ACTIVE_BRANCH_NAME, origin.refs[ACTIVE_BRANCH_NAME])
+repo.heads[ACTIVE_BRANCH_NAME].checkout(True) ')
+}
+
+_run_cat_git() {
+    $(runPythonCode 'from git import Repo
+import sys
+
+OFFICIAL_UPSTREAM_REPO = $(_get_repolink)
+ACTIVE_BRANCH_NAME = "'$UPSTREAM_REPO_BRANCH'" or "master"
+
+repo = Repo.init()
+origin = repo.create_remote("temponame", OFFICIAL_UPSTREAM_REPO)
+origin.fetch()
+repo.create_head(ACTIVE_BRANCH_NAME, origin.refs[ACTIVE_BRANCH_NAME])
+repo.heads[ACTIVE_BRANCH_NAME].checkout(True) ')
+}
+
 _set_bot () {
     local zippath
     zippath="catuserbot.zip"
@@ -53,10 +85,10 @@ _set_bot () {
     echo "  Cleaning ..."
     rm -rf "$zippath"
     sleep 5
-    python3 ./setup/gitstart.py "https://github.com/sandy1709/catpack" "master"
+    _run_catpack_git
     cd $CATPATH
+    _run_cat_git
     python3 ../setup/updater.py ../requirements.txt requirements.txt
-    python3 ../setup/gitstart.py $(_get_repolink) ${UPSTREAM_REPO_BRANCH}
     chmod -R 755 bin
     echo "    Starting CatUserBot    "
     echo "
