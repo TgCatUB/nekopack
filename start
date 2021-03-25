@@ -67,7 +67,6 @@ _run_cat_git() {
 import sys
 OFFICIAL_UPSTREAM_REPO="'$repolink'"
 ACTIVE_BRANCH_NAME = "'$UPSTREAM_REPO_BRANCH'" or "master"
-print(OFFICIAL_UPSTREAM_REPO)
 repo = Repo.init()
 origin = repo.create_remote("temponame", OFFICIAL_UPSTREAM_REPO)
 origin.fetch()
