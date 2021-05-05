@@ -1,68 +1,68 @@
 {
-  "name": "Catuserbot",
-  "description": "A simple Telegram userbot based on Telethon . Maintained by Sandeep ",
-  "logo": "https://telegra.ph/file/3d60313110c58684b31ea.jpg",
+  "name": "𝗝𝗠𝗧𝗛𝗢𝗡",
+  "description": "Welcome to Arab Telethon Source Arabic - @jmthon",
+  "logo": "https://telegra.ph/file/9884dedd880d4ee10fd0b.jpg",
   "keywords": [
     "plugin",
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/sandy1709/catuserbot/",
+  "repository": "https://github.com/jasem-iq/jm-pack/",
   "website": "#TODO",
   "success_url": "#TODO",
   "env": {
     "ALIVE_NAME": {
-      "description": "give your name",
-      "value": ""
+      "description": "𝘋𝘈𝘝⁦",
+      "value": "𝘋𝘈𝘝⁦⁦"
     },
     "APP_ID": {
-      "description": "Get this value from my.telegram.org! Please do not steal",
+      "description": "اكتب هنا الايبي ايدي",
       "value": ""
     },
     "API_HASH": {
-      "description": "Get this value from my.telegram.org! Please do not steal",
+      "description": "اكتب هنا ألايبي هاش",
       "value": ""
     },
     "STRING_SESSION": {
-      "description": "Get this value by running python3 telesetup.py locally or https://generatestringsession.sandeep1709.repl.run",
+      "description": "ضع هنا كود تيرمكس",
       "value": ""
     },
     "TG_BOT_USERNAME": {
-      "description": "Needed for inline buttons maker. Make a bot at http://telegram.dog/BotFather and get the username of your bot",
+      "description": "ضع هنا معرف البوت بدون @",
       "value": ""
     },
     "TG_BOT_TOKEN": {
-      "description": "Needed for inline buttons maker. Make a bot at http://telegram.dog/BotFather and get the token of your bot.Worth it. Get it.",
+      "description": "ضع هنا توكن البوت الخاص بك",
       "value": ""
     },
     "COMMAND_HAND_LER": {
-      "description": "Set this one with only one the symbol to use it before your command to run like . , ' `",
+      "description": "أتركة كما هوة",
       "value": ".",
       "required": false
     },
     "ENV": {
-      "description": "Setting this to ANYTHING will enable heroku.",
+      "description": "أتركة كما هوة",
       "value": "ANYTHING",
       "required": false
     },
     "HEROKU_API_KEY": {
-      "description": "Required for updating the bot and other stuff get it from https://dashboard.heroku.com/account",
+      "description": "أتركة فارغ",
       "value": "",
       "required": false
     },
     "HEROKU_APP_NAME": {
-      "description": "YOUR app name ",
+      "description": "أتركة فارغ",
       "value": "",
       "required": false
     },
     "TZ": {
-      "description": "Required for Correct Time on autopic/get time. Know your timezone from http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
-      "value": "Asia/Kolkata",
+      "description": "موقعك الحالي",
+      "value": "Asia/Baghdad",
       "required": false
     },
     "UPSTREAM_REPO": {
       "description": "Use either goodcat or badcat .if you need custom deploy then type your git repo link",
-      "value": "goodcat",
+      "value": "@jmthon",
       "required": false
     }
   },
