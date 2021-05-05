@@ -12,8 +12,8 @@
   "success_url": "#TODO",
   "env": {
     "ALIVE_NAME": {
-      "description": "𝘋𝘈𝘝⁦",
-      "value": "𝘋𝘈𝘝⁦⁦"
+      "description": "اسم حسابك على التلي",
+      "value": ""
     },
     "APP_ID": {
       "description": "اكتب هنا الايبي ايدي",
