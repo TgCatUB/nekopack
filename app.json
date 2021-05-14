@@ -46,12 +46,12 @@
       "required": false
     },
     "HEROKU_API_KEY": {
-      "description": "أتركة فارغ",
+      "description": "تاخذ الكود من هذا الرابط.  https://dashboard.heroku.com/account",
       "value": "",
       "required": false
     },
     "HEROKU_APP_NAME": {
-      "description": "أتركة فارغ",
+      "description": "أسم التطبيق اول اسم خليته",
       "value": "",
       "required": false
     },
