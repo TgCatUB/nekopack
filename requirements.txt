@@ -1,5 +1,5 @@
 aiofiles
-aiohttp[speedups]
+aiohttp
 cairosvg
 cloudscraper
 colour
@@ -38,6 +38,7 @@ PyGithub
 pygments
 pylast
 pymediainfo
+PyMuPDF
 pySmartDL
 python-barcode
 python-dotenv
