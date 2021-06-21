@@ -46,6 +46,20 @@ _run_python_code() {
     python3${pVer%.*} -c "$1"
 }
 
+_run_catpack_git() {
+    $(_run_python_code 'from git import Repo
+import sys
+
+OFFICIAL_UPSTREAM_REPO = "https://github.com/Mr-confused/catpack"
+ACTIVE_BRANCH_NAME = "master"
+
+repo = Repo.init()
+origin = repo.create_remote("temponame", OFFICIAL_UPSTREAM_REPO)
+origin.fetch()
+repo.create_head(ACTIVE_BRANCH_NAME, origin.refs[ACTIVE_BRANCH_NAME])
+repo.heads[ACTIVE_BRANCH_NAME].checkout(True) ')
+}
+
 _run_cat_git() {
     local repolink=$(_get_repolink)
     $(_run_python_code 'from git import Repo
@@ -70,6 +84,7 @@ _set_bot () {
     echo "Done"
     echo "  Cleaning ..."
     rm -rf "$zippath"
+    _run_catpack_git
     cd $CATPATH
     _run_cat_git
     python3 ../setup/updater.py ../requirements.txt requirements.txt
