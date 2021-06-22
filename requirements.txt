@@ -21,10 +21,12 @@ hachoir
 heroku3
 html-telegraph-poster
 humanize
+IMDbPY
 jikanpy
 justwatch
 lottie
 lyricsgenius
+markdown
 motor
 moviepy
 nekos.py
