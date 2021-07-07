@@ -31,7 +31,6 @@ markdown
 motor
 moviepy
 nekos.py
-opencv-contrib-python
 Pillow
 prettytable
 psutil
