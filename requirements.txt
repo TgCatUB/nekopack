@@ -29,8 +29,9 @@ lottie
 lyricsgenius
 markdown
 motor
+moviepy
 nekos.py
-opencv-contrib-python-headless
+opencv-python-headless
 Pillow
 prettytable
 psutil
