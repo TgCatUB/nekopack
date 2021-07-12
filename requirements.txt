@@ -60,7 +60,7 @@ speedtest-cli
 sqlalchemy-json
 sqlalchemy
 telegraph
-git+https://github.com/sandy1709/Telethon@test
+git+https://github.com/sandy1709/Telethon
 tgcrypto
 tswift
 ujson
