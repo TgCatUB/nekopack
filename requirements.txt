@@ -30,7 +30,7 @@ lyricsgenius
 markdown
 motor
 nekos.py
-opencv-python
+opencv-contrib-python
 Pillow
 prettytable
 psutil
