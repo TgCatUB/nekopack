@@ -4,7 +4,7 @@ import shlex
 from typing import Tuple
 import sys
 
-# if any requirements are cahnged then install that requirement
+# if ny requirements are cahnged then install that requirement
 async def lines_differnce(file1, file2):
     with open(file1) as f1:
         lines1 = f1.readlines()
