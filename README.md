@@ -8,7 +8,6 @@ Main source is here [main source](https://github.com/sandy1709/catuserbot) fork 
 
 fork this repo and [main repo](https://github.com/sandy1709/catuserbot) and click on deploy
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## credits
    - [@midnightmadwalk](https://t.me/midnightmadwalk)
