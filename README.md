@@ -6,7 +6,7 @@ Main source is here [main source](https://github.com/sandy1709/catuserbot) fork 
 
 ## Deploy
 
-fork this repo and [main repo](https://github.com/sandy1709/catuserbot) and click on deploy
+fork this repo and [main repo](https://github.com/sandy1709/nekopack) and click on deploy
 
 
 ## credits
