@@ -12,5 +12,5 @@ Fork Deploy is highly recommended
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## credits
-   - [@midnightmadwalk](https://t.me/midnightmadwalk)
-   - [@DeletedUser420](https://t.me/DeletedUser420)
+   - [@NobitaShizuka07](https://t.me/NobitaShizuka07)
+   - [@Shizuka_Nobita07](https://t.me/Shizuka_Nobita07)
