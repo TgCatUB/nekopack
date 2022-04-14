@@ -56,9 +56,14 @@
       "value": "Asia/Kolkata",
       "required": false
     },
-    "UPSTREAM_REPO": {
-      "description": "Use either goodcat or badcat .if you need custom deploy then type your git repo link",
-      "value": "goodcat",
+    "EXTERNAL_REPO": {
+      "description": "To install external plugins. if you set it to no then external plugins will not install",
+      "value": "no",
+      "required": false
+    },
+    "BADCAT": {
+      "description": "set yes to install 18+ plugins.",
+      "value": "no",
       "required": false
     }
   },
