@@ -7,7 +7,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/sandy1709/catuserbot/",
+  "repository": "https://github.com/TgCatUB/catuserbot",
   "website": "#TODO",
   "success_url": "#TODO",
   "env": {
@@ -57,13 +57,13 @@
       "required": false
     },
     "EXTERNAL_REPO": {
-      "description": "To install external plugins. if you set it to no then external plugins will not install",
-      "value": "no",
+      "description": "To install external plugins. if you don't want, change value to 'False'",
+      "value": "True",
       "required": false
     },
     "BADCAT": {
-      "description": "set yes to install 18+ plugins.",
-      "value": "no",
+      "description": "set 'True' to install 18+ plugins.",
+      "value": "False",
       "required": false
     }
   },
