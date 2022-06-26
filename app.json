@@ -73,7 +73,6 @@
       "version": "12"
     }
   }],
-  "overrides": {
   "buildpacks": [{
     "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
   },{
@@ -90,7 +89,6 @@
     "url": "https://github.com/heroku/heroku-buildpack-nodejs"
   },{
     "url": "heroku/python"
-  }]
-  },
+  }],
   "stack": "heroku-22"
 }
