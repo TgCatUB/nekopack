@@ -1,11 +1,8 @@
-aiofiles
 aiohttp
-apscheduler
-cairosvg
 cloudscraper
 colour
 cowpy
-emoji
+emoji==1.7.0
 fonttools
 geopy
 gitpython
@@ -25,14 +22,12 @@ justwatch
 lottie
 lyricsgenius
 markdown
-markdown-it-py
 motor
 opencv-python-headless
 Pillow
 prettytable
 psutil
 psycopg2
-PyDictionary
 pyfiglet
 PyGithub
 pygments
