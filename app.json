@@ -24,11 +24,11 @@
       "value": ""
     },
     "STRING_SESSION": {
-      "description": "Get this value by running python3 telesetup.py locally or https://generatestringsession.sandeep1709.repl.run",
+      "description": "Get this value by running python3 stringsetup.py locally or https://generatestringsession.sandeep1709.repl.run",
       "value": ""
     },
     "TG_BOT_TOKEN": {
-      "description": "Needed for inline buttons maker. Make a bot at http://telegram.dog/BotFather and get the token of your bot.Worth it. Get it.",
+      "description": "Needed for inline buttons maker. Make a bot at http://telegram.dog/BotFather and get the token of your bot.",
       "value": ""
     },
     "COMMAND_HAND_LER": {
@@ -86,6 +86,9 @@
   },{
     "url": "https://github.com/chrismytton/heroku-buildpack-jq"
   },{
+    "url": "https://github.com/rahulps1000/heroku-buildpack-nodejs"
+  },{
     "url": "heroku/python"
-  }]
+  }],
+  "stack": "heroku-22"
 }
