@@ -59,4 +59,3 @@ git+https://github.com/jisan09/Telethon@beta
 git+https://github.com/goldsmith/Wikipedia
 git+https://github.com/sandy1709/py-googletrans
 git+https://github.com/alexmercerind/youtube-search-python
-git+https://github.com/yt-dlp/yt-dlp
