@@ -1,4 +1,5 @@
 aiohttp
+apscheduler
 cinemagoer
 cloudscraper
 colour
@@ -23,6 +24,7 @@ lottie
 lyricsgenius
 markdown
 motor
+openai
 Pillow
 prettytable
 psutil
